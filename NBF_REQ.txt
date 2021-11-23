@@ -1,0 +1,41 @@
+<ns1:Envelope xmlns:ns1="http://tempuri.org/InitiateSOARequest/Input" xmlns:tem="http://tempuri.org/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+	<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+		<wsse:UsernameToken wsu:Id="UsernameToken-C4CB74D943D5AFC436162911426591458">
+			<wsse:Username>SOAAPIUSER</wsse:Username>
+			<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">THIbsefVv0ohcW2tkExox4IHtsk=</wsse:Password>
+			<wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">Va0Svdm/bb0msGxtHJ4nwA==</wsse:Nonce>
+			<wsu:Created>2021-08-16T11:44:25.914Z</wsu:Created>
+		</wsse:UsernameToken>
+	</wsse:Security>
+</soapenv:Header>
+   <ns1:Body>
+    <tem:InitiateSOARequest xmlns:tem="http://tempuri.org/">
+         <!--Optional:-->
+        <tem:objOUT_SRM>
+            <!--Optional:-->
+            <tem:UniqueReferenceNumber>BPMer288842ZE24</tem:UniqueReferenceNumber>
+            <!--Optional:-->
+            <tem:StatementRequestedOn>2021-04-19</tem:StatementRequestedOn>
+            <!--Optional:-->
+            <tem:EntityId>057</tem:EntityId>
+            <!--Optional:-->
+            <tem:StatementRequestorIBAN>AE820570000011056357018</tem:StatementRequestorIBAN>
+            <!--Optional:-->
+            <tem:CustomerName>DEV01</tem:CustomerName>
+            <!--Optional:-->
+            <tem:IDtype>TL</tem:IDtype>
+            <!--Optional:-->
+            <tem:IDNumber>TL4248957467806</tem:IDNumber>
+            <!--Optional:-->
+            <tem:StatementPeriodStartDate>2021-04-01</tem:StatementPeriodStartDate>
+            <!--Optional:-->
+            <tem:StatementPeriodEndDate>2021-04-19</tem:StatementPeriodEndDate>
+            <!--Optional:-->
+            <tem:CustomerEmailId></tem:CustomerEmailId>
+            <!--Optional:-->
+            <tem:Channel>BPM</tem:Channel>
+         </tem:objOUT_SRM>
+      </tem:InitiateSOARequest>
+   </ns1:Body>
+</ns1:Envelope>
